@@ -1,0 +1,22 @@
+<html manifest="9.cache">
+<head>
+<title>PS4 9.00 Exploit by Alex</title>
+
+<style>
+body{
+background: url('ps4.jpg');
+background-color:black;color:#CFB53B;font-size:28px;text-align:center;}
+.info{position:relative;top:25%;}
+
+</style>
+<script>
+window.applicationCache.oncached=function(e){localStorage.cached="yes";setTimeout(webkitExploit,50);};
+</script>
+<script src="9.js"></script>
+</head>
+<body onload="if(localStorage.cached=='yes')setTimeout(webkitExploit,50);">
+<br>
+<br><br><br>
+<div id="msgs" class="info">Running Webkit Exploit, Please WAIT ...</div>
+</body>
+</html>
